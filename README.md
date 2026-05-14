@@ -4,7 +4,7 @@ so i use socket programming to create a way to communicate between my pc with VM
 with this code you can choose VMs as server and in your pc there are 2 ways of manage file: <br> 
 
 1. send file:<br>
-   first you have to run server file like normal then run your pc code with command : <strong>sendFile.py "YOUR_FILE_NAME" "send"<strong><br>
+   first you have to run server file like normal then run your pc code with command : <strong>sendFile.py "YOUR_FILE_NAME" "send"<strong>
    you can send file with type of .py .c or anything like that or file directory and be careful that it works with just file in the same         level with main code, i will add some feature that we can add file from other directory <br>
 
 2. get file: <br>

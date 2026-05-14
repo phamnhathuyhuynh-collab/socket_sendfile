@@ -34,15 +34,15 @@ def sendFile(fileName, method):
             else: 
                 encode = zip_directory(fileName)
             s = socket.socket()
-            s.connect(('YOUR_PCs_IP_NEED_TO_SEND_FILE', port))
+            s.connect(('YOUR_PCs_IP_NEED_TO_SEND_FILE_OR_GET(SERVER)', port))
             s.sendall(method.encode())
             s.close()
             s = socket.socket()
-            s.connect(('YOUR_PCs_IP_NEED_TO_SEND_FILE', port))
+            s.connect(('YOUR_PCs_IP_NEED_TO_SEND_FILE_OR_GET(SERVER)', port))
             s.sendall(fileName.encode())
             s.close()
             s = socket.socket()
-            s.connect(('YOUR_PCs_IP_NEED_TO_SEND_FILE', port))  
+            s.connect(('YOUR_PCs_IP_NEED_TO_SEND_FILE_OR_GET(SERVER)', port))  
             s.sendall(encode)
             s.close()
         except Exception as e:
@@ -51,12 +51,12 @@ def sendFile(fileName, method):
     if method == "get":
         try:
             s = socket.socket()
-            s.connect(('YOUR_PCs_IP_NEED_TO_SEND_FILE', port))
+            s.connect(('YOUR_PCs_IP_NEED_TO_SEND_FILE_OR_GET(SERVER)', port))
             s.sendall(method.encode())
             s.close()
 
             s = socket.socket()
-            s.connect(('YOUR_PCs_IP_NEED_TO_SEND_FILE', port))
+            s.connect(('YOUR_PCs_IP_NEED_TO_SEND_FILE_OR_GET(SERVER)', port))
             s.sendall(fileName.encode())
             s.close()
 

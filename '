@@ -1,0 +1,14 @@
+from PIL import Image
+import base64
+from io import BytesIO
+
+import socket
+
+s = socket.socket()
+
+port = 8000
+#image = Image.open("anhtest.jpg")
+text = """Huy: How are you ? """
+s.connect(('10.141.112.205', port))
+s.sendall(encode)
+s.close()

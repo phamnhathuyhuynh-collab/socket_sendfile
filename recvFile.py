@@ -60,7 +60,7 @@ def server():
                     encode = zip_directory(filename)
 
                 s_two = socket.socket()
-                s_two.connect(('192.168.1.219', port))  
+                s_two.connect(('YOUR_PC_IP', port))  
                 s_two.sendall(encode)
                 s_two.close()
 
